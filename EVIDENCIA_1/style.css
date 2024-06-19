@@ -23,13 +23,14 @@ body{
 
 li{
   list-style: none;
-  display: inline;
-  margin: 15px;
-  margin-top: 150px;
-  padding-top: 10px;
+  display: inline-block;
   background-color: var(--color);
   border-radius: var(--border-radius);
-
+  height: 30px;
+  padding: 5px;
+  width: 200px;
+  margin-top: 12px;
+  text-align: center;
 }
 
 li:hover{

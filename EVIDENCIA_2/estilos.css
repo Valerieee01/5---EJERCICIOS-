@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+.spider{
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.spider-card{
+    width: 350px;
+}
+
+#titulo1{
+    color: rgb(187, 9, 9);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.card1{
+    margin: auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 350px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.boton{
+    border: 2px solid rgb(133, 17, 17);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    background-color: rgb(189, 13, 13);
+    color: white;
+    font-size: 18px;
+}
+
+
+.card2{
+   filter: drop-shadow(30px 30px 30px yellow); 
+}
+
+.goku{
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+
+.card3{
+    filter: drop-shadow(30px 30px 30px red); 
+}
+
+.spiderman{
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+

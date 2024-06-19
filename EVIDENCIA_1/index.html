@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>FORMULARIO</title>
+</head>
+
+<body>
+  <div class="container">
+      <nav>
+        <li><a href="../EVIDENCIA_1/index.html">Formulario</a></li>
+        <li><a href="../EVIDENCIA_2/index.html">Card de Spiderman</a></li>
+        <li><a href="../EVIDENCIA_3/galeria.html">Galeria</a></li>
+        <li><a href="../EVIDENCIA_4/pseudoclases.html">Card Pseudoclases</a></li>
+        <li><a href="../EVIDENCIA_5/variables.html">Card Variables</a></li>
+      </nav>
+  </div>
+
+  <article>
+    <H4>Campo Requerido</H4>
+    <form action="" method="get" autocomplete="off">
+      <label for="n_incidencia">Número incidencia: </label>
+      <input type="text" name="n_incidencia" id="n_incidencia" pattern="[A-Za-z0-9]{1,15}" required>
+      <br><br>
+      <label for="fecha_hora">Fecha / Hora de recepción: </label>
+      <input type="datetime-local" name="fecha_hora" id="fecha_hora" required>
+  </article>
+  <article>
+    <h4>Información de Usuario</h4>
+    <label for="name">Nombre del cliente</label>
+    <input type="text" name="name" id="name" pattern="[A-Za-z, ]{3,30}" required>
+    <br><br>
+    <label for="id">Tipo de identificación: </label>
+    <select name="Tipo_id" id="Tipo_id" required>
+      <option value="">Seleccione</option>
+      <option value="CC">CC</option>
+      <option value="TI">TI</option>
+      <option value="RC">Registro Civil</option>
+      <option value="T">Cedula Extranjeria</option>
+    </select>
+    <br><br>
+    <label for="email">E-mail: </label>
+    <input type="email" name="email" id="email" required minlength="5" maxlength="30">
+    <br><br>
+    <label for="identificación">Identificación: </label>
+    <input type="text" name="identificación" id="identificación" pattern="[0-9]{1,20}" required>
+    <br><br>
+    <label for="tipo_solicitante">Tipo de Solicitante</label>
+    <select name="tipo_solicitante" id="tipo_solicitante" required>
+      <option value="">Seleccione</option>
+      <option value="Docente">Docente</option>
+      <option value="Estudiante">Estudiante</option>
+      <option value="Administrativo">Administrativo</option>
+    </select>
+  </article>
+  <article>
+    <h4>Información de Contacto</h4>
+    <label for="pais">País: </label>
+    <input type="text" name="pais" id="pais" required pattern="[A-Za-z]{3,30}">
+    <br><br>
+    <label for="Ciudad">Ciudad: </label>
+    <input type="text" name="Ciudad" id="Ciudad" required pattern="[A-Za-z, ]{3,30}" minlength="3" maxlength="20">
+    <br><br>
+    <label for="telefono">Teléfono: </label>
+    <input type="tel" name="telefono" id="telefono" required minlength="10" maxlength="10">
+    <br><br>
+    <label for="contacto">Medio de Contacto Preferido: </label>
+    <select name="contacto" id="contacto">
+      <option value="">Seleccione</option>
+      <option value="Correo">Correo Escrito</option>
+      <option value="telefono">Teléfono</option>
+      <option value="WhatsApp">WhatsApp</option>
+    </select>
+    <br><br>
+    <label for="departamento">Departamento: </label>
+    <input type="text" name="departamento" id="departamento" required pattern="[A-Za-z ]{3,40}">
+    <br><br>
+    <label for="celular">Celular: </label>
+    <input type="text" name="celular" id="celular" required pattern="[0-9]{1,10}">
+    <br><br>
+    <label for="direccion">Dirección: </label>
+    <input type="text" name="direccion" id="direccion" pattern="[A-Za-z0-9, ]{3,15}" required>
+  </article>
+  <article>
+    <h4>Información de Solicitud</h4>
+    <label for="fecha_vencimiento">Fecha de Vencimiento: </label>
+    <input type="date" name="fecha_vencimiento" id="fecha_vencimiento" required>
+    <br><br>
+    <label for="asunto">Asunto: </label>
+    <input type="text" name="asunto" id="asunto" required pattern="[A-Za-z, ]{1,20}">
+    <br><br>
+    <label for="Descripcion">Descripción: </label>
+    <textarea name="Descripcion" id="" cols="30" rows="10" required minlength="5" maxlength="50"></textarea>
+    <br><br>
+    <label for="adjunto">Adjunto: </label>
+    <input type="file" name="adjunto" id="adjunto" required accept="image/png, image/jpg" multiple>
+    <article>
+      <input type="submit" value="Enviar ">
+    </article>
+  </article>
+  </form>
+</body>
+
+</html>
